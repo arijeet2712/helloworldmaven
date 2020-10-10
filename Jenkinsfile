@@ -17,11 +17,11 @@ pipeline
                 tool name: 'localMaven', type: 'maven'
             }
         }
+    }
         
      post {
         success {
             mail bcc: '', body: 'build sUccedded', cc: '', from: '', replyTo: '', subject: 'build done', to: 'arijeet2712@gmail.com'
                 }
           }
-    }
 }
